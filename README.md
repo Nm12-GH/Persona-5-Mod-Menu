@@ -1,3 +1,6 @@
+This repository is for P5R for PlayStation 5.
+**Be compatible with PPSA03805 (Japanese version)**
+
 # ATTENTION PC/SWITCH USERS
 **The latest update is not complete**, but a preview release for PC can be found [here](https://github.com/ShrineFox/Persona-5-Mod-Menu/releases/tag/1.9). Thank you for your patience.  
 This repository has been restructured to support building for P5 PS3, as well as P5R on consoles and PC. These changes make it easier to maintain the mod on all platforms while keeping changes in sync.  
