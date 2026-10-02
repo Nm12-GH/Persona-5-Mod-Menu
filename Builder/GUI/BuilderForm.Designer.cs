@@ -347,7 +347,8 @@ namespace ModMenuBuilder
             "P5_PS4",
             "P5R_PS4",
             "P5R_Switch",
-            "P5R_PC"});
+            "P5R_PC",
+            "P5R_PS5"});
             this.comboBox_Version.Location = new System.Drawing.Point(3, 33);
             this.comboBox_Version.Name = "comboBox_Version";
             this.comboBox_Version.Size = new System.Drawing.Size(129, 24);

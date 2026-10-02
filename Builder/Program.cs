@@ -92,6 +92,13 @@ namespace ModMenuBuilder
                         SelectedGame.ShortName = "P5R";
                         SelectedGame.ConsoleName = "PC";
                         break;
+                    case "P5R_PS5":
+                        SelectedGame.Version = GameVersion.P5R_PS5;
+                        SelectedGame.Platform = PlatformType.New;
+                        SelectedGame.Type = GameType.Royal;
+                        SelectedGame.ShortName = "P5R";
+                        SelectedGame.ConsoleName = "PS5";
+                        break;
                     default:
                         Output.Log($"Game selection is not valid!", ConsoleColor.Red);
                         return;
@@ -149,7 +156,7 @@ namespace ModMenuBuilder
         [Option("e", "encoding", "P5|P5R_EFIGS|SJ", "Specifies the encoding to compile with. (default: P5R_EFIGS)")]
         public string Encoding { get; set; } = "P5R_EFIGS";
 
-        [Option("g", "game", "P5_PS3|P5_PS3_EX|P5_PS4|P5R_PS4|P5R_Switch|P5R_PC", "Specifies the game to generate output for. (default: P5R_PC)")]
+        [Option("g", "game", "P5_PS3|P5_PS3_EX|P5_PS4|P5R_PS4|P5R_Switch|P5R_PC|P5R_PS5|", "Specifies the game to generate output for. (default: P5R_PC)")]
         public string Game { get; set; } = "P5R_PC";
 
         [Option("o", "output", "path", "Specifies the path to the directory to use as output. (default: .exe directory)")]
@@ -195,7 +202,8 @@ namespace ModMenuBuilder
         P5_PS4,
         P5R_PS4,
         P5R_Switch,
-        P5R_PC
+        P5R_PC,
+        P5R_PS5
     }
 
     public enum PlatformType
