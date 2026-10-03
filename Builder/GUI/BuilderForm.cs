@@ -40,6 +40,13 @@ namespace ModMenuBuilder
                     comboBox_Encoding.SelectedIndex = comboBox_Encoding.Items.IndexOf(File.ReadAllText("encoding.txt"));
             }
             catch { }
+            try
+            {
+                comboBox_Encoding.SelectedIndex = comboBox_Encoding.Items.IndexOf("P5R_Japanese");
+                if (File.Exists("encoding.txt"))
+                    comboBox_Encoding.SelectedIndex = comboBox_Encoding.Items.IndexOf(File.ReadAllText("encoding.txt"));
+            }
+            catch { }
             changedSettings = true;
 
 #if DEBUG

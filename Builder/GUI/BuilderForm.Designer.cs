@@ -366,6 +366,7 @@ namespace ModMenuBuilder
             this.comboBox_Encoding.Items.AddRange(new object[] {
             "P5",
             "P5R_EFIGS",
+            "P5R_Japanese",
             "SJ"});
             this.comboBox_Encoding.Location = new System.Drawing.Point(6, 33);
             this.comboBox_Encoding.Name = "comboBox_Encoding";
